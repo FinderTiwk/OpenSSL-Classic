@@ -12,9 +12,9 @@ OPENSSL_VERSION="1.0.1i"
 DEVELOPER=$(xcode-select --print-path)
 
 IOS_SDK_VERSION=$(xcrun --sdk iphoneos --show-sdk-version)
-IOS_DEPLOYMENT_VERSION="5.1.1"
+IOS_DEPLOYMENT_VERSION="4.0"
 OSX_SDK_VERSION=$(xcrun --sdk macosx --show-sdk-version)
-OSX_DEPLOYMENT_VERSION="10.8"
+OSX_DEPLOYMENT_VERSION="10.6"
 
 IPHONEOS_PLATFORM=$(xcrun --sdk iphoneos --show-sdk-platform-path)
 IPHONEOS_SDK=$(xcrun --sdk iphoneos --show-sdk-path)
@@ -99,6 +99,7 @@ build()
    fi
 }
 
+build "armv6" "${IPHONEOS_SDK}" "ios"
 build "armv7" "${IPHONEOS_SDK}" "ios"
 build "armv7s" "${IPHONEOS_SDK}" "ios"
 build "arm64" "${IPHONEOS_SDK}" "ios"
