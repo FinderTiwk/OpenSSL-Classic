@@ -28,4 +28,5 @@ pod 'OpenSSL-Classic'
 **Authors**
 
 OpenSSL-Universal - [Marcin Krzyżanowski](https://twitter.com/krzyzanowskim)
+
 OpenSSL-Classic fork - [Andrew Heard](http://www.wizheard.com)
