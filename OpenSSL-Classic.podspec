@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "OpenSSL-Classic"
-  s.version      = "1.0.1.j"
+  s.version      = "1.0.1.i"
   s.summary      = "OpenSSL for older versions of iOS (4.0+) and OS X (10.6+)."
   s.description  = "OpenSSL is an SSL/TLS and Crypto toolkit. Deprecated in Mac OS and gone in iOS, this spec gives your project non-deprecated OpenSSL support. Supports OS X 10.6+ and iOS 4.0+ including Simulator (armv6, armv7,armv7s,arm64,i386,x86_64)."
   s.homepage     = "http://www.openssl.org/"
