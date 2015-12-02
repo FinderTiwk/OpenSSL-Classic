@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
-  s.name         = "OpenSSL-Universal"
-  s.version      = "1.0.1.p"
-  s.summary      = "OpenSSL for iOS and OS X"
-  s.description  = "OpenSSL is an SSL/TLS and Crypto toolkit. Deprecated in Mac OS and gone in iOS, this spec gives your project non-deprecated OpenSSL support. Supports OSX and iOS including Simulator (armv7,armv7s,arm64,i386,x86_64)."
+  s.name         = "OpenSSL-Classic"
+  s.version      = "1.0.2d"
+  s.summary      = "OpenSSL for older versions of iOS (4.0+) and OS X (10.6+)."
+  s.description  = "OpenSSL is an SSL/TLS and Crypto toolkit. Deprecated in Mac OS and gone in iOS, this spec gives your project non-deprecated OpenSSL support. Supports OS X 10.6+ and iOS 4.0+ including Simulator (armv6, armv7,armv7s,arm64,i386,x86_64)."
   s.homepage     = "http://www.openssl.org/"
   s.license	     = { :type => 'OpenSSL (OpenSSL/SSLeay)', :file => 'LICENSE.txt' }
-  s.source       = { :git => "https://github.com/andrewheard/OpenSSL.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/andrewheard/OpenSSL-Classic.git", :tag => "#{s.version}" }
 
   s.authors       =  {'Mark J. Cox' => 'mark@openssl.org',
                      'Ralf S. Engelschall' => 'rse@openssl.org',
@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
                      'Tim Hudson' => 'tjh@cryptsoft.com',
                      'Justin Plouffe' => 'plouffe.justin@gmail.com'}
   
-  s.ios.platform          = :ios, '8.0'
+  s.ios.platform          = :ios, '9.0'
   s.ios.deployment_target = '4.0'
   s.ios.source_files        = 'include-ios/openssl/**/*.h'
   s.ios.public_header_files = 'include-ios/openssl/**/*.h'
@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
   s.ios.preserve_paths      = 'lib-ios/libcrypto.a', 'lib-ios/libssl.a'
   s.ios.vendored_libraries  = 'lib-ios/libcrypto.a', 'lib-ios/libssl.a'
 
-  s.osx.platform          = :osx, '10.10'
+  s.osx.platform          = :osx, '10.11'
   s.osx.deployment_target = '10.6'
   s.osx.source_files        = 'include-osx/openssl/**/*.h'
   s.osx.public_header_files = 'include-osx/openssl/**/*.h'

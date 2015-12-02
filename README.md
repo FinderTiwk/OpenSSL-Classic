@@ -5,7 +5,7 @@ A fork of the OpenSSL-Universal project, which supports older, "classic", versio
 
 Package comes with precompiled libraries, and includes a script to build newer versions, if necessary.
 
-Current version contains binaries built with iOS SDK 7.1 (target iOS 4.0), and Mac OS X SDK 10.9 (target Mac OS X 10.6 Snow Leopard) for all supported architectures.
+Current version contains binaries built with iOS SDK 9.1 (target iOS 4.0), and Mac OS X SDK 10.11 (target Mac OS X 10.6 Snow Leopard) for all supported architectures.
 
 **Architectures**
 

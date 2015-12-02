@@ -9,10 +9,6 @@
 extern "C" {
 #endif
 
-#ifdef  __cplusplus
-extern "C" {
-#endif
-
 /* Avoid name clashes with other applications */
 # define os_toascii   _openssl_os_toascii
 # define os_toebcdic  _openssl_os_toebcdic
